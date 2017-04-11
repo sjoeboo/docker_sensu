@@ -13,7 +13,10 @@ COPY run.sh /root/run.sh
 
 ENV SENSU_TYPE client
 ENV SENSU_PLUGINS ""
+ENV EXTRA_PLUGINS ""
 ENV SENSU_CLIENT_SUBSCRIPTIONS default
-#ENV SENSU_CLIENT_NAME "client-01"
+
+ENV SENSU_EXTENSIONS "sensu-extensions-system-profile"
+
 
 CMD /root/run.sh
