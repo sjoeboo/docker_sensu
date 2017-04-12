@@ -5,11 +5,6 @@ do
   sensu-install -p $i
 done
 
-for i in $EXTRA_PLUGINS
-do
-  sensu-install -p $i
-done
-
 for e in $SENSU_EXTENSIONS
 do
   sensu-install -e $e
