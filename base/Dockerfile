@@ -16,7 +16,7 @@ ENV SENSU_EXTENSIONS ""
 ENV SENSU_PLUGINS ""
 ENV SENSU_CLIENT_SUBSCRIPTIONS default
 
-RUN sensu-install -P "sensu-plugins-network-checks,sensu-plugins-disk-checks,sensu-plugins-http,sensu-plugins-memory-checks,sensu-plugins-sensu,sensu-plugins-dns,sensu-plugins-cpu-checks,sensu-plugins-process-checks,sensu-plugins-docker,sensu-plugins-load-checks"
+RUN sensu-install -P "sensu-plugins-network-checks,sensu-plugins-disk-checks,sensu-plugins-http,sensu-plugins-memory-checks,sensu-plugins-sensu,sensu-plugins-dns,sensu-plugins-cpu-checks,sensu-plugins-process-checks,sensu-plugins-docker,sensu-plugins-load-checks,sensu-plugins-graphite"
 RUN sensu-install -e sensu-extensions-system-profile
 
 CMD /root/run.sh
